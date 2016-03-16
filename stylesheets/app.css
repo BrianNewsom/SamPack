@@ -2,60 +2,7 @@
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
 
-html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
-body{line-height:1}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
-nav ul{list-style:none}
-blockquote,q{quotes:none}
-blockquote:before,blockquote:after,q:before,q:after{content:none}
-a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
-mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
-del{text-decoration:line-through}
-abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
-table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
-input,select{vertical-align:middle}
-li{list-style:none}
-
-
-/* =============================================================================
-   My CSS
-   ========================================================================== */
-
 /* ---- base ---- */
-
-html,body{ 
-    width:100%;
-    height:100%;
-    background:#111;
-    background-image:url("../images/headphones.jpeg");
-    background-size:contain;
-    background-repeat:no-repeak;
-}
-
-html{
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body{
-  font:normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas{
-  display:block;
-  vertical-align:bottom;
-}
-
-#input-panel{
-  position:absolute;
-  left:0px;
-  right:0px;
-  margin: auto;
-  top: 200px;
-}
-input#input-text{
-  background-color:transparent;
-}
 
 /* form starting stylings ------------------------------- */
 .group            { 
@@ -69,12 +16,13 @@ input               {
   width:300px;
   border:none;
   border-bottom:1px solid #757575;
+  background:transparent;
 }
 input:focus         { outline:none; }
 
 /* LABEL ======================================= */
 label                {
-  color:#999; 
+  color:white; 
   font-size:18px;
   font-weight:normal;
   position:absolute;
@@ -90,7 +38,7 @@ label                {
 input:focus ~ label, input:valid ~ label        {
   top:-20px;
   font-size:14px;
-  color:#5264AE;
+  color:white;
 }
 
 /* BOTTOM BARS ================================= */
