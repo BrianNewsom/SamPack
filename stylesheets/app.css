@@ -28,6 +28,9 @@ html,body{
     width:100%;
     height:100%;
     background:#111;
+    background-image:url("../images/headphones.jpeg");
+    background-size:contain;
+    background-repeat:no-repeak;
 }
 
 html{
@@ -45,21 +48,13 @@ canvas{
 
 #input-panel{
   position:absolute;
-  top:100px;
-  left:400px;
+  left:0px;
+  right:0px;
+  margin: auto;
+  top: 200px;
 }
 input#input-text{
-  background-color:rgb(182, 25, 36);
-}
-
-#particles-js{
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  background-color:transparent;
 }
 
 /* form starting stylings ------------------------------- */

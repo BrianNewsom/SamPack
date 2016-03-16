@@ -1,5 +1,4 @@
 $(document).ready(function(){
-particlesJS.load('particles-js', 'assets/particles.json', function() {});
 
 var maxCommunicator = new MaxCommunication.getInstance({
    'socketHost' : "localhost:8080",
