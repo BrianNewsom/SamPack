@@ -4,7 +4,6 @@ var Websocket = (function(){
 	function init(options){
 		var socket = io.connect(options.host);
 		socket.on('connected',function(data){
-            console.log("yay");
 			console.log(data.connected);
 		});
 
