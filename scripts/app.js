@@ -17,6 +17,10 @@ maxCommunicator.setDefaultBehaviour(function(oscMsg){
 
 function sendData(){
     var data = document.getElementById("input-text").value;
+    upload(data)
+}
+
+function upload(data){
     sweetAlert({
         title: "Submit Request?",
         text: "Click to confirm description: \"" + data + "\"",
@@ -56,6 +60,10 @@ function setInputLabel(){
 }
 
 // setInputLabel();
+$('#lyric-btn').click(function(){
+    var data = document.getElementById("lyric-text").value;
+    upload(data);
+})
 
 $('#go-btn').click(function(){
     sendData();
