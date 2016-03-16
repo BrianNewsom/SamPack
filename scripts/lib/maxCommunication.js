@@ -28,7 +28,6 @@ var MaxCommunication = (function(){
 
 		// private function to send a message to Max
 		function sendMessageToMax(address,typeArray,valueArray){
-            alert("Sending msg to max");
 			socket.sendMsg("max",{"port" : udpPort, "mssg" : oscLib.createOSCMsg(address,typeArray,valueArray)});
 		}
 
