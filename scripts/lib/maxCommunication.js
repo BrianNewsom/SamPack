@@ -15,7 +15,7 @@ var MaxCommunication = (function(){
 
 		// add Max message listener and handling to socket
 		socket.receiveMsg("max",function(data){
-            alert("received max message");
+            /*
 			var oscMsg = oscLib.parseOSCMsg(data);
 			var functionId = oscMsg.address;
 
@@ -24,6 +24,7 @@ var MaxCommunication = (function(){
 			} else{
 				controls["default"](oscMsg);
 			}
+            */
 		});
 
 		// private function to send a message to Max

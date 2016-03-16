@@ -33,7 +33,7 @@ function sendData(){
                 success: function(res){
                     // console.log("Response: " + res)
                     data = JSON.parse(res);
-                    maxCommunicator.sendStringToMax("dumb,", data.data.join(","));
+                    maxCommunicator.sendFloatsToMax("address", data.data);
                     sweetAlert('Success!', 'Thanks for submitting your request.  We\'ll send you the sample pack!', "success");
                 },
                 error: function(){
