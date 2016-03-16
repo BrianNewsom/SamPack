@@ -23,9 +23,10 @@ function sendData(){
         dataType: 'text',
         crossDomain : true,
         url: "http://localhost:8080/tone?text=" + data,
-        success: function(data){
-            console.log("Sending: " + data)
-            maxCommunicator.sendStringToMax("address", data);
+        success: function(res){
+            console.log("Response: " + res)
+            data = JSON.parse(res);
+            maxCommunicator.sendStringToMax("address", data.data.join(","));
         }
     });
 }
