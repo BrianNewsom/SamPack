@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+/*
 var maxCommunicator = new MaxCommunication.getInstance({
    'socketHost' : "localhost:8080",
    'udpPort' : 7374
@@ -14,6 +15,7 @@ maxCommunicator.setDefaultBehaviour(function(oscMsg){
 
     console.log(oscMsg);
 });
+*/
 
 function sendData(){
     var data = document.getElementById("input-text").value;
@@ -37,7 +39,7 @@ function upload(data){
                 success: function(res){
                     // console.log("Response: " + res)
                     data = JSON.parse(res);
-                    maxCommunicator.sendFloatsToMax("address", data.data);
+                    // maxCommunicator.sendFloatsToMax("address", data.data);
                     sweetAlert('Success!', 'Thanks for submitting your request.  We\'ll send you the sample pack!', "success");
                 },
                 error: function(){
